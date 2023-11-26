@@ -88,6 +88,12 @@ h2{
     color: brown;
     font-size: 24px;
 }
+.overlay-text2{
+  text-align: center;
+  margin-top: 100%;
+  color: brown;
+  font-size: 24px;
+}
 .image2{
     background-image: url('images/Acupuncture.jpg');
     background-size: cover; /* Adjust as needed */
@@ -110,8 +116,8 @@ h2{
 
 .clickable-box {
     display: inline-block;
-    padding: 13px;
-    background-color: black; /* Box background color */
+    padding: 10px;
+    background-color: orangered; /* Box background color */
     color: #fff; /* Text color */
     text-decoration: none; /* Remove underline for the link */
     border-radius: 10px; /* Rounded corners */
@@ -119,26 +125,16 @@ h2{
     text-align: center;
     margin-left: 80px;
 }
+.our-team{
+  margin-top: 30px;
+}
+.our-team img{
+  max-width: 80%;
+  margin:auto;
+  padding: 30px;
+  text-align: center;   
+}
 
-.images4{
-    width: 100%;
-    background-image: url('images/2.jpg');
-    background-size: cover; /* Adjust as needed */
-    background-position: center; /* Adjust as needed */
-    background-repeat: no-repeat; /* Adjust as needed */
-    margin: 10px; /* Remove default margin */
-    padding: 1px; /* Remove default padding */
-    text-align: center;   
-}
-.overlay-text4{
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-}
 .book{
     background-image: url('images/1.jpg');
     background-size: cover; /* Adjust as needed */
@@ -156,9 +152,209 @@ h2{
     font-size: 2rem;
     text-decoration: none;
 }
-.desktop{
+.our-approach{
     display: none;
+}
+.contact-us{
+    margin: 20px 0;
+  }
+footer{
+    display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+
+  body {
+    background:lightgray;
+    color: black;
+    font-family: Helvetica, sans-serif;
+    margin: auto;
+  }
+  main{
+    padding:10px;
+    max-width: 100%;
+  }
+  header {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    margin-bottom: 0px;
+    border-radius: 3px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    background-color: darkgray;
+  }
+  nav {
+    padding-top: 30px;
+    text-align: right;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+  
+  nav ul li {
+    padding: 8px 0;
+  }
+  
+  nav ul li a {
+    color: white;
+  }
+  
+  .show-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  nav .toggle {
+    display: block;
+  }
+
+  img{
+    max-width: 100%;
+  }
+  .hero{
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+video{
+  max-width:100%;
+}
+
+/* Style to overlay content on top of the video */
+.content-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:black; /* Set text color to white or a color that suits your design */
+}
+h2{
+    margin: auto;
+    text-align: center;
+}
+.about-us
+{
+  margin: auto;
+  padding: 60px;
+  font-size: 24px;
+}
+.services {
+    width: 100%;
+}
+.flex-services{
+  display: flex;
+  margin: auto;
+  padding: 10px;
+}
+.image{
+    max-width: 100%;
+    background-image: url('images/CancerRecovery.jpg');
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    background-repeat: no-repeat; /* Adjust as needed */
+    margin: auto;
+    text-align: center;
+}
+.overlay-text{
+    text-align: center;
+    margin-top: 100%;
+    color: brown;
+    font-size: 24px;
+}
+.overlay-text2{
+  text-align: center;
+  margin-top: 63%;
+  color: brown;
+  font-size: 24px;
+}
+.image2{
+    background-image: url('images/Acupuncture.jpg');
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    background-repeat: no-repeat; /* Adjust as needed */
+    margin: auto;
+    text-align: center;
+}
+.image3{
+    background-image: url('images/ManualTherapy.jpg');
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    background-repeat: no-repeat; /* Adjust as needed */
+    margin: auto;
+    text-align: center;
+}
+.clickable-box {
+
+    padding: 10px;
+    background-color: orangered; /* Box background color */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline for the link */
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    margin-left: 43%;
+}
+
+.our-team {
+  width: 100%;
+  margin: auto;
+  align-content: center;
+  padding: 30px 100px;
+}
+.our-team img{
+  width:100%;
+  margin: auto;
+}
+.our-team h2{
+  margin-left: 1px;
+}
+.book{
+    background-image: url('images/1.jpg');
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    background-repeat: no-repeat; /* Adjust as needed */
+    padding: 300px 500px;
+    margin: auto;
+}
+.book a{
+    border: 1px solid black;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+.para-hide{
+  display:initial;
+  color: black;
+}
+.our-approach{
+  margin: auto;
+  align-items: center;
+  width: 90%;
+  font-size: 24px;
+  margin:30px
+}
+.contact-us{
+  width: 100%;
+  text-align: center;
+  margin: 30px;
 }
 footer{
     display: flex;
+    margin: auto;
+}
+footer img{
+  width: 50%;
+}
+iframe{
+  width:90% ;
+  padding: 50px 70px;
+}
 }
