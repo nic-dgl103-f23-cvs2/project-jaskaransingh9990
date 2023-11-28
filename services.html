@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/Ascent Logo new.png" width="90">
+        <nav>
+            <a class="toggle" onclick="showNav()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <ul id="nav-items">
+                <li>
+                    HOME
+                </li>
+                <li>
+                    SERVICES
+                </li>
+                <li>
+                    OUR TEAM
+                </li>
+                <li>
+                    CONTACT-US
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        function showNav() {
+            var element = document.getElementById("nav-items");
+            element.classList.toggle("show-items");
+        }
+    </script>
+    <main>
+        <div class="hero">
+            <video autoplay muted loop playsinline>
+                <source src="video/Physical Therapy Ad Video Template (Editable) (1).mp4" type="video/mp4">
+            </video>
+            <div class="content-overlay">
+                <!-- Your content goes here -->
+                <h2>book now</h2>
+            </div>
+        </div>
+        <section class="services-page">
+            <h2>OUR SERVICES</h2>
+            <div class="flex-services-page">
+                <div class="grid-item">
+                    <img src="images/CancerRecovery.jpg" alt="Cancer">
+                    <div class="overlay-text2">Cancer Recovery</div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/Acupuncture.jpg" alt="Acupuncture">
+                    <div class="overlay-text2">Acupuncture</div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/ManualTherapy.jpg" alt="Manual Therapy">
+                    <div class="overlay-text2">Manual Therapy</div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/PelvicHealth.jpg" alt="pelvic">
+                    <div class="overlay-text2">Pelvic Health</div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/CardiacRehab.jpg" alt="cardiac">
+                    <div class="overlay-text2">Cardiac Rehab</div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/VestibularRehabilitation.jpg" alt="vestibular">
+                    <div class="overlay-text2">Vestibular Rehabilitation</div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/VisceralManipulation.jpg" alt="viscera">
+                    <div class="overlay-text2">Visceral Manipulation</div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/CraniosacralTherapy.jpg" alt="craniosacral">
+                    <div class="overlay-text2">Craniosacral Therapy</div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/KinesiologyExerciseClasses.jpg" alt="KinesiologyExerciseClasses">
+                    <div class="overlay-text2">Kinesiology ExerciseClasses</div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/BikeFitPhysiotherapy.jpg" alt="bike">
+                    <div class="overlay-text2">BikeFit Physiotherapy</div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/RunningAnalysis.jpg" alt="running">
+                    <div class="overlay-text2">Running Analysis</div>
+                </div>
+                <div class="grid-item">
+                    <img src="images/Lymphedema.jpg" alt="lym">
+                    <div class="overlay-text2">Lymphedema</div>
+                </div>
+            </div>
+          </section>
+
+    </main>
+</body>
+<footer>
+    <img src="images/Ascent Logo new.png" alt="logo">
+</footer>
+
+</html>
