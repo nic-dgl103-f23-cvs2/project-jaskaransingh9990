@@ -5,7 +5,7 @@ body {
     margin: auto;
   }
   main{
-    padding:60px;
+    padding:40px;
   }
   header {
     border: 1px solid rgba(255, 255, 255, 0.8);
@@ -151,9 +151,16 @@ h2{
 .contact-us{
     margin: 20px 0;
   }
+  iframe{
+    width:90% ;
+    padding: 10px 10px;
+  }
 footer{
     display: flex;
     padding: 10px  40px;
+}
+.anchor{
+  display:none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -168,42 +175,23 @@ footer{
     padding:10px;
     max-width: 100%;
   }
+ 
   header {
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    margin-bottom: 0px;
-    border-radius: 3px;
-    padding: 16px;
-    display: flex;
-    justify-content: space-between;
-    background-color: darkgray;
+    align-items: center;
   }
+
   nav {
-    padding-top: 30px;
-    text-align: right;
+    padding-top: 0;
   }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+
+  nav .toggle {
     display: none;
   }
-  
-  nav ul li {
-    padding: 8px 0;
-  }
-  
-  nav ul li a {
-    color: white;
-  }
-  
-  .show-items {
+
+  #nav-items {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  nav .toggle {
-    display: block;
+    flex-direction: row;
+    gap: 40px;
   }
 
   img{
@@ -231,6 +219,10 @@ video{
 h2{
     margin: auto;
     text-align: center;
+}
+h1{
+  margin: auto;
+  text-align: center;
 }
 .about-us
 {
@@ -275,21 +267,21 @@ h2{
   margin: auto;
 }
 .our-team h2{
-  margin-left: 1px;
+  margin-right: 60px;
 }
 .book{
     background-image: url('images/1.jpg');
     background-size: cover; /* Adjust as needed */
     background-position: center; /* Adjust as needed */
     background-repeat: no-repeat; /* Adjust as needed */
-    padding: 300px 500px;
+    padding: 300px 0px;
     margin: auto;
 }
 .book a{
     border: 1px solid black;
     border-radius: 5px;
     position: absolute;
-    left: 50%;
+    left: 45%;
     color: white;
     font-size: 2rem;
     text-decoration: none;
@@ -297,13 +289,15 @@ h2{
 .para-hide{
   display:initial;
   color: black;
+  width:50%;
 }
 .our-approach{
   margin: auto;
   align-items: center;
-  width: 90%;
+  width: 95%;
   font-size: 24px;
-  margin:30px
+  margin:30px;
+  display: block;
 }
 .contact-us{
   width: 100%;
@@ -317,11 +311,38 @@ footer{
 footer img{
   width: 50%;
 }
+.anchor{
+  width: 600px;
+  margin: auto;
+  display:block;
+}
+.anchor a {
+  color: white;
+  background-color: #5A827F;
+  padding: 5px 11px;
+  border-style: 2px solid;
+  border-radius: 25px;
+  width: 100%;
+  margin-left: 200px;
+  text-decoration:none;
+}
+a:hover
+{
+  background-color: red;
+  font-size: 35px;
+}
 iframe{
   width:90% ;
   padding: 50px 70px;
 }
+
+
+
+
+
+
 /*  services page*/
+
 .grid-item {
   padding: 10px;
   font-size: 30px;
@@ -340,11 +361,24 @@ iframe{
 }
 .overlay-text2{
     position: absolute;
-    top: 1%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     font-size: 20px;
     font-weight: bold;
+}
+
+
+
+/*contact-us page*/
+.contact-div{
+  background-image: url('images/book.jpg');
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat; /* Adjust as needed */
+  padding: 300px 20px;
+  margin: auto;
+  width: 100%;
 }
 }
