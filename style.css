@@ -1,20 +1,21 @@
 body {
-    background:lightgray;
-    color: black;
-    font-family: Helvetica, sans-serif;
-    margin: auto;
+  background:lightgray;
+  color: black;
+  font-family: Helvetica, sans-serif;
+  margin: auto;
+  max-width:100%;
+  padding:10px;
   }
-  main{
-    padding:40px;
-  }
+  
   header {
     border: 1px solid rgba(255, 255, 255, 0.8);
     margin-bottom: 0px;
     border-radius: 3px;
-    padding: 16px;
     display: flex;
     justify-content: space-between;
     background-color: darkgray;
+    max-width: 100%;
+    padding: 10px;
   }
   nav {
     padding-top: 30px;
@@ -48,7 +49,7 @@ body {
 
     top: 0;
     left: 0;
-    width: 100%;
+    max-width: 1170px;
     overflow: hidden;
     position: relative;
 }
@@ -115,26 +116,23 @@ h2{
     border-radius: 10px; /* Rounded corners */
     transition: background-color 0.3s ease; /* Smooth transition for background color */
     text-align: center;
-    margin-left: 50px;
+    margin-left: 90px;
     margin-top: 30px;
 }
 .our-team{
   margin-top: 30px;
 }
 .our-team img{
-  max-width: 80%;
+  max-width: 100%;
   margin:auto;
-  padding: 30px;
   text-align: center;   
 }
 
 .book{
-    background-image: url('images/1.jpg');
-    background-size: cover; /* Adjust as needed */
+    background-image: url('images/1.jpg'); /* Adjust as needed */
     background-position: center; /* Adjust as needed */
     background-repeat: no-repeat; /* Adjust as needed */
-    padding:40%; /* Remove default padding */
-    margin: 30px;
+    padding: 100px;
 }
 .book a{
     border: 1px solid black;
@@ -148,19 +146,24 @@ h2{
 .our-approach{
     display: none;
 }
-.contact-us{
-    margin: 20px 0;
-  }
-  iframe{
-    width:90% ;
-    padding: 10px 10px;
-  }
-footer{
-    display: flex;
-    padding: 10px  40px;
+
+footer img{
+width:100%;
+margin: auto;
 }
 .anchor{
   display:none;
+}
+
+/*contact-us page*/
+.contact-div{
+  background-image: url('images/book.jpg');
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat; /* Adjust as needed */
+  padding: 56px;
+  margin: auto;
+  width: 69%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -170,19 +173,18 @@ footer{
     color: black;
     font-family: Helvetica, sans-serif;
     margin: auto;
+    max-width:100%;
   }
-  main{
-    padding:10px;
-    max-width: 100%;
-  }
+  
  
   header {
     align-items: center;
+    max-width: 100%;
+    margin: auto;
+    padding: 10px;
   }
 
-  nav {
-    padding-top: 0;
-  }
+  
 
   nav .toggle {
     display: none;
@@ -198,45 +200,49 @@ footer{
     max-width: 100%;
   }
   .hero{
-    max-width: 100%;
     overflow: hidden;
     position: relative;
     margin: auto;
+    max-width: 100%;
+    
 }
 video{
   max-width:100%;
+  height: 10%;
 }
 
 /* Style to overlay content on top of the video */
 .content-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color:black; /* Set text color to white or a color that suits your design */
+        padding: 10px 20px;
+        border: 1px solid #45a049;
+        background-color: #45a049;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        transition: background-color 0.3s ease;
 }
 h2{
-    margin: auto;
     text-align: center;
 }
 h1{
-  margin: auto;
   text-align: center;
 }
 .about-us
 {
   margin: auto;
-  padding: 60px;
-  font-size: 24px;
+  max-width: 100%;
 }
-.services {
-    width: 100%;
+.about-us p{
+  font-size: 16px;
+
+}
+.services-page {
+max-width: 100%;
+margin: auto;
 }
 .flex-services{
   display: flex;
   margin: auto;
-  padding: 10px;
 }
 .overlay-text1{
   position: absolute;
@@ -254,37 +260,37 @@ h1{
     text-decoration: none; /* Remove underline for the link */
     border-radius: 10px; /* Rounded corners */
     transition: background-color 0.3s ease; /* Smooth transition for background color */
-    margin-left: 43%;
+    margin-left: 44%;
 }
 .our-team {
   width: 100%;
   margin: auto;
   align-content: center;
-  padding: 30px 100px;
 }
 .our-team img{
   width:100%;
   margin: auto;
 }
-.our-team h2{
-  margin-right: 60px;
+.book-now{
+  width:100%;
 }
 .book{
-    background-image: url('images/1.jpg');
-    background-size: cover; /* Adjust as needed */
+    background-image: url('images/1.jpg'); /* Adjust as needed */
     background-position: center; /* Adjust as needed */
     background-repeat: no-repeat; /* Adjust as needed */
-    padding: 300px 0px;
-    margin: auto;
+    position:relative;
+    padding: 300px;
 }
 .book a{
-    border: 1px solid black;
-    border-radius: 5px;
-    position: absolute;
-    left: 45%;
-    color: white;
-    font-size: 2rem;
-    text-decoration: none;
+  position: absolute;
+  padding: 10px 20px;
+  border: 1px solid #45a049;
+  background-color: #45a049;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  left: 41%;
 }
 .para-hide{
   display:initial;
@@ -300,32 +306,23 @@ h1{
   display: block;
 }
 .contact-us{
-  width: 100%;
   text-align: center;
   margin: 30px;
 }
 footer{
-    display: flex;
     margin: auto;
+   max-width:100%;
 }
 footer img{
-  width: 50%;
+  width: 80%;
+  margin:  auto;
 }
 .anchor{
   width: 600px;
   margin: auto;
   display:block;
 }
-.anchor a {
-  color: white;
-  background-color: #5A827F;
-  padding: 5px 11px;
-  border-style: 2px solid;
-  border-radius: 25px;
-  width: 100%;
-  margin-left: 200px;
-  text-decoration:none;
-}
+
 a:hover
 {
   background-color: red;
@@ -333,10 +330,11 @@ a:hover
 }
 iframe{
   width:90% ;
-  padding: 50px 70px;
 }
 
-
+.footer-flex{
+  display:flex;
+}
 
 
 
@@ -377,8 +375,8 @@ iframe{
   background-size: cover; /* Adjust as needed */
   background-position: center; /* Adjust as needed */
   background-repeat: no-repeat; /* Adjust as needed */
-  padding: 300px 20px;
+  padding: 200px;
   margin: auto;
-  width: 100%;
+  width: 69%;
 }
 }
