@@ -211,7 +211,6 @@ video{
   height: 10%;
 }
 
-/* Style to overlay content on top of the video */
 .content-overlay {
         padding: 10px 20px;
         border: 1px solid #45a049;
@@ -378,5 +377,47 @@ iframe{
   padding: 200px;
   margin: auto;
   width: 69%;
+}
+/*  our team page */
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 80px;
+  max-width: 1170px;
+  margin: auto;
+
+
+}
+
+.card-wrapper {
+  border: 2px solid red;
+  padding: 20px;
+  border-radius: 70px;
+  background-color: lightgray;
+  color: black;
+}
+
+.card-wrapper img {
+  width: 100%;
+}
+
+.card-wrapper h2 {
+  font-size: 4rem;
+  color: darkred;
+}
+
+.card-wrapper p {
+  font-size: 1.5rem;
+  width: 95%;
+  margin-top: 20px;
+}
+
+.card-wrapper:hover {
+  background-color: black;
+  color: silver;
+  opacity: 70%;
 }
 }
