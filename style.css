@@ -3,7 +3,7 @@ body {
   color: black;
   font-family: 'Open Sans', sans-serif;
   margin: auto;
-  max-width:100%;
+  max-width:375px;
   padding:10px;
   }
   h1,h2{
@@ -72,7 +72,7 @@ video{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color:black; /* Set text color to white or a color that suits your design */
+    color:black;
 }
 .content-overlay a{
   position: absolute;
@@ -85,13 +85,19 @@ video{
   transition: background-color 0.3s ease;
   left: 28%;
 }
-h2{
+.about-us h2{
     margin: auto;
     text-align: center;
+    font-size: 34px;
 }
 .services-page {
     width: 100%;
     margin-top: 20px;
+    text-align: center;
+}
+.services-page h2{
+  margin: auto;
+  font-size: 30px;
 }
 .flex-services-page {
   display: grid;
@@ -114,33 +120,27 @@ h2{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-}
-.overlay-text2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 16px;
+  color: black;
+  font-size: 30px;
   font-weight: bold;
 }
 .clickable-box {
     display: inline-block;
     padding: 10px;
-    background-color: green; /* Box background color */
+    background-color: black; /* Box background color */
     color: #fff; /* Text color */
     text-decoration: none; /* Remove underline for the link */
     border-radius: 10px; /* Rounded corners */
     transition: background-color 0.3s ease; /* Smooth transition for background color */
     text-align: center;
-    margin-left: 96px;
     margin-top: 30px;
 }
 .our-team{
   margin: 20px 0; 
+  text-align: center;
+}
+.our-team h2{
+  font-size: 24px;
 }
 .our-team img{
   max-width: 100%;
@@ -168,6 +168,10 @@ h2{
 }
 footer{
   margin-top: 20px;
+  text-align: center
+}
+footer h2{
+  font-size: 24px;
 }
 .our-approach{
     display: none;
@@ -190,10 +194,22 @@ margin: auto;
   width: 69%;
 }
 /* services page */
+.overlay-text2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  font-size:30px;
+  font-weight: bold;
+}
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+}
+.table h2{
+  text-align: center;
 }
 th, td {
   border: 1px solid black;
@@ -223,6 +239,7 @@ th {
   border-radius: 70px;
   background-color: lightgray;
   color: black;
+  text-align: center;
 }
 
 .card-wrapper img {
@@ -230,22 +247,88 @@ th {
 }
 
 .card-wrapper h2 {
-  font-size: 4rem;
+  font-size: 24px;
 
 }
 
 .card-wrapper p {
-  font-size: 1.5rem;
+  font-size: 16px;
   width: 95%;
   margin-top: 20px;
+  text-align: justify;
 }
 
 .card-wrapper:hover {
   background-color: white;
-  color: silver;
   opacity: 70%;
 }
+/* contact-us*/
+.contact-div{
+  max-width:375px;
+  position: relative;
+}
+.contact-div p{
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  top:25%;
+  left:35%;
+}
 
+.form-container {
+  background-color: gray;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 375px;
+  margin: 30px auto; 
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+input[type="submit"]:focus {
+  outline: none;
+}
 @media only screen and (min-width: 768px) {
 
   body {
