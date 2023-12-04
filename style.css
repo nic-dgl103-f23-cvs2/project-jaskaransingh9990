@@ -9,6 +9,11 @@ body {
   h1,h2{
     font-family: 'Roboto', sans-serif;
   }
+  .warpper-width
+  {
+    width: 1170px;
+    margin:auto;
+  }
   
   header {
     border: 1px solid rgba(255, 255, 255, 0.8);
@@ -37,7 +42,8 @@ body {
   }
   
   nav ul li a {
-    color: white;
+    color: black;
+    text-decoration: none;
   }
   
   .show-items {
@@ -68,12 +74,24 @@ video{
     text-align: center;
     color:black; /* Set text color to white or a color that suits your design */
 }
+.content-overlay a{
+  position: absolute;
+  padding: 10px 20px;
+  border: 1px solid ;
+  background-color: rgba(22, 21, 21, 0.7);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  left: 28%;
+}
 h2{
     margin: auto;
     text-align: center;
 }
 .services-page {
     width: 100%;
+    margin-top: 20px;
 }
 .flex-services-page {
   display: grid;
@@ -213,7 +231,7 @@ th {
 
 .card-wrapper h2 {
   font-size: 4rem;
-  color: darkred;
+
 }
 
 .card-wrapper p {
@@ -223,7 +241,7 @@ th {
 }
 
 .card-wrapper:hover {
-  background-color: black;
+  background-color: white;
   color: silver;
   opacity: 70%;
 }
@@ -243,12 +261,10 @@ th {
  }
   header {
     align-items: center;
-    max-width: 100%;
+    width: 1170px;
     margin: auto;
     padding: 10px;
   }
-
-  
 
   nav .toggle {
     display: none;
@@ -263,11 +279,15 @@ th {
   img{
     max-width: 100%;
   }
+  .wrraper-width{
+    width:1170px;
+    margin: auto;
+  }
   .hero{
     overflow: hidden;
     position: relative;
     margin: auto;
-    max-width: 100%;
+    width: 1170px;
     
 }
 video{
@@ -276,14 +296,16 @@ video{
   display: inline-block;
 }
 
-.content-overlay {
-        padding: 10px 20px;
-        border: 1px solid #45a049;
-        background-color: #45a049;
-        color: white;
-        text-decoration: none;
-        border-radius: 10px;
-        transition: background-color 0.3s ease;
+.content-overlay a{
+  position: absolute;
+  padding: 10px 20px;
+  border: 1px solid ;
+  background-color:rgba(24, 23, 23, 0.6);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  margin:auto;
 }
 h2{
     text-align: center;
@@ -294,14 +316,15 @@ h1{
 .about-us
 {
   margin: auto;
-  max-width: 100%;
+  width: 1170px;
+  margin-top: 30px;
 }
 .about-us p{
-  font-size: 16px;
+  font-size: 24px;
 
 }
 .services-page {
-max-width: 100%;
+width: 1170px;
 margin: auto;
 }
 .flex-services{
@@ -313,13 +336,13 @@ margin: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  font-size: 20px;
+  color: red;
+  font-size: 29px;
   font-weight: bold;
 }
 .clickable-box {
    padding: 10px;
-    background-color: orangered; /* Box background color */
+    background-color: green; /* Box background color */
     color: #fff; /* Text color */
     text-decoration: none; /* Remove underline for the link */
     border-radius: 10px; /* Rounded corners */
@@ -327,14 +350,17 @@ margin: auto;
     margin-left: 44%;
 }
 .our-team {
-  width: 100%;
+  width: 1170px;
   margin: auto;
   align-content: center;
+  margin-top: 30px;
 }
 .our-team img{
   width:100%;
   margin: auto;
+  margin-top: 20px;
 }
+
 .book-now{
   width:100%;
 }
@@ -357,41 +383,29 @@ margin: auto;
   transition: background-color 0.3s ease;
   left: 41%;
 }
-.para-hide{
-  display:initial;
-  color: black;
-  width:50%;
+.book a:hover
+{
+  background-color: red;
+  font-size: 35px;
 }
-.our-approach{
-  margin: auto;
-  align-items: center;
-  width: 95%;
-  font-size: 24px;
-  margin:30px;
-  display: block;
+
+
+footer{
+    margin: auto;
+   width:1170px;
 }
 .contact-us{
   text-align: center;
   margin: 30px;
 }
-footer{
-    margin: auto;
-   max-width:100%;
-}
 footer img{
-  width: 80%;
+  width: 50%;
   margin:  auto;
 }
 .anchor{
   width: 600px;
   margin: auto;
   display:block;
-}
-
-a:hover
-{
-  background-color: red;
-  font-size: 35px;
 }
 iframe{
   width:70% ;
@@ -400,22 +414,46 @@ iframe{
 .footer-flex{
   display:flex;
 }
+footer .logo
+{
+text-align: center;
+}
 
 
 
 
 /*  services page*/
 
+.our-approach{
+  margin: auto;
+  align-items: center;
+  width: 1170px;
+  font-size: 24px;
+  display: block;
+}
+
+.para-hide{
+  display:initial;
+  color: black;
+  width:50%;
+}
+
+
+.services-page{
+  width:1170px;
+  margin: auto;
+  margin-top: 30px;
+}
+.flex-services-page {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
 .grid-item {
   padding: 10px;
   font-size: 30px;
   text-align: center;
   position: relative;
   gap: 10px;
-}
-.flex-services-page {
-  display: grid;
-  grid-template-columns: auto auto auto;
 }
 .grid-item img {
   width: 100%;
@@ -432,9 +470,10 @@ iframe{
     font-weight: bold;
 }
 table {
-  width: 100%;
+  width: 1170px;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin: auto;
 }
 th, td {
   border: 1px solid black;
@@ -450,12 +489,20 @@ th {
 /*contact-us page*/
 .contact-div{
   background-image: url('images/book.jpg');
-  background-size: cover; /* Adjust as needed */
-  background-position: center; /* Adjust as needed */
-  background-repeat: no-repeat; /* Adjust as needed */
-  padding: 200px;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  padding: 180px;
   margin: auto;
   width: 69%;
+  position: relative;
+}
+.contact-div p{
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  top:25%;
+  left:45%;
 }
 /*  our team page */
 .card {
@@ -485,18 +532,19 @@ th {
 
 .card-wrapper h2 {
   font-size: 4rem;
-  color: darkred;
+  color: black;
 }
 
 .card-wrapper p {
   font-size: 1.5rem;
   width: 95%;
   margin-top: 20px;
+  text-align: justify;
 }
 
 .card-wrapper:hover {
-  background-color: black;
-  color: silver;
+  background-color: silver;
+  color: red;
   opacity: 70%;
 }
 }

@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-
+  <meta charset="UTF-8">
+  <title>my project</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
@@ -14,21 +15,21 @@
 <body>
 
   <header>
-    <img src="images/Ascent Logo new.png" width="90">
+    <img src="images/logo.png" width=90 alt="logo">
     <nav>
       <a class="toggle" onclick="showNav()"><i class="fa fa-bars" aria-hidden="true"></i></a>
       <ul id="nav-items">
         <li>
-          HOME
+        <a href="index.html">Home</a>
         </li>
         <li>
-          SERVICES
+          <a href="services.html">SERVICES</a>
         </li>
         <li>
-          OUR TEAM
+          <a href="our-team.html">OUR TEAM</a>
         </li>
         <li>
-          CONTACT-US
+          <a href="contact-us.html">CONTACT US</a>
         </li>
       </ul>
     </nav>
@@ -41,13 +42,15 @@
     }
   </script>
   <main>
+    <div class="wrraper-width">
     <div class="hero">
       <video autoplay muted loop playsinline>
-        <source src="video/Physical Therapy Ad Video Template (Editable) (1).mp4" type="video/mp4">
+        <source src="video/videos.mp4" type="video/mp4">
       </video>
       <div class="content-overlay">
         <a href="contact-us.html">Book Appointment</a>
       </div>
+    </div>
     </div>
     <section class="about-us">
       <h2>About us</h2>
@@ -78,8 +81,10 @@
       <h2>our team</h2>
       <img src="images/2.jpg" alt="team" >
     </section>
+    <div class="wrraper-width">
       <div class="book">
         <a href="contact-us.html">Book Appointment</a>
+      </div>
       </div>
   </main>
   <footer>
@@ -102,8 +107,8 @@
       style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   
     </section>
-    <div>
-  <img src="images/Ascent Logo new.png" alt="logo">
+    <div class="logo">
+  <img src="images/logo.png" alt="logo">
   </div>
   </footer>
 </body>
