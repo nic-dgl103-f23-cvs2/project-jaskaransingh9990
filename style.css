@@ -350,18 +350,6 @@ video{
   height: 10%;
   display: inline-block;
 }
-
-.content-overlay a{
-  position: absolute;
-  padding: 10px 20px;
-  border: 1px solid ;
-  background-color:rgba(24, 23, 23, 0.6);
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  margin:auto;
-  display:initial;
-}
 .about-us
 {
   margin: auto;
