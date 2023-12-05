@@ -55,10 +55,6 @@ body {
     max-width: 100%;
   }
   .hero{
-    top: 0;
-    left: 0;
-    max-width: 1170px;
-    overflow: hidden;
     position: relative;
 }
 video{
@@ -66,32 +62,14 @@ video{
 }
 
 /* Style to overlay content on top of the video */
-.content-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color:black;
-}
-.content-overlay a{
-  position: absolute;
-  padding: 10px 20px;
-  border: 1px solid ;
-  background-color: rgba(22, 21, 21, 0.7);
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
-  left: 28%;
-}
+
 .about-us h2{
     margin: auto;
     text-align: center;
     font-size: 34px;
 }
 .services-page {
-    width: 100%;
+    max-width: 375px;
     margin-top: 20px;
     text-align: center;
 }
@@ -168,7 +146,7 @@ video{
 }
 footer{
   margin-top: 20px;
-  text-align: center
+  text-align: center;
 }
 footer h2{
   font-size: 24px;
@@ -240,6 +218,7 @@ th {
   background-color: lightgray;
   color: black;
   text-align: center;
+  transition: background-color 1s ease;
 }
 
 .card-wrapper img {
@@ -259,15 +238,15 @@ th {
 }
 
 .card-wrapper:hover {
-  background-color: white;
-  opacity: 70%;
+  background-color: silver;
+  opacity: 50%;
 }
 /* contact-us*/
 .contact-div{
-  max-width:375px;
+  max-width:100%;
   position: relative;
 }
-.contact-div p{
+.contact-div h1{
   position: absolute;
   color: white;
   font-size: 24px;
@@ -279,12 +258,10 @@ th {
   background-color: gray;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 375px;
   margin: 30px auto; 
 }
 
-h1 {
+.contact-div h2 {
   text-align: center;
   color: #333;
 }
@@ -295,7 +272,7 @@ form {
 }
 
 label {
-  font-size: 1.2rem;
+  font-size: 16px;
   margin-bottom: 8px;
 }
 
@@ -318,17 +295,9 @@ input[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 1.2rem;
-  transition: background-color 0.3s ease;
+  font-size: 16px;
 }
 
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-input[type="submit"]:focus {
-  outline: none;
-}
 @media only screen and (min-width: 768px) {
 
   body {
@@ -371,7 +340,7 @@ input[type="submit"]:focus {
     position: relative;
     margin: auto;
     width: 1170px;
-    
+    display:inline-block;
 }
 video{
   max-width:100%;
@@ -387,8 +356,8 @@ video{
   color: white;
   text-decoration: none;
   border-radius: 10px;
-  transition: background-color 0.3s ease;
   margin:auto;
+  display:initial;
 }
 h2{
     text-align: center;
@@ -407,7 +376,7 @@ h1{
 
 }
 .services-page {
-width: 1170px;
+max-width: 1170px;
 margin: auto;
 }
 .flex-services{
@@ -419,18 +388,16 @@ margin: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: red;
+  color: black;
   font-size: 29px;
   font-weight: bold;
 }
 .clickable-box {
    padding: 10px;
-    background-color: green; /* Box background color */
-    color: #fff; /* Text color */
-    text-decoration: none; /* Remove underline for the link */
-    border-radius: 10px; /* Rounded corners */
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
-    margin-left: 44%;
+    background-color: green; 
+    color: #fff;
+    text-decoration: none; 
+    border-radius: 10px; 
 }
 .our-team {
   width: 1170px;
@@ -469,7 +436,6 @@ margin: auto;
 .book a:hover
 {
   background-color: red;
-  font-size: 35px;
 }
 
 
@@ -485,15 +451,9 @@ footer img{
   width: 50%;
   margin:  auto;
 }
-.anchor{
-  width: 600px;
-  margin: auto;
-  display:block;
-}
 iframe{
   width:70% ;
 }
-
 .footer-flex{
   display:flex;
 }
@@ -514,7 +474,9 @@ text-align: center;
   font-size: 24px;
   display: block;
 }
-
+.our-approach h1{
+  font-size: 34px;
+}
 .para-hide{
   display:initial;
   color: black;
@@ -526,6 +488,9 @@ text-align: center;
   width:1170px;
   margin: auto;
   margin-top: 30px;
+}
+.services-page h2{
+  font-size: 34px;
 }
 .flex-services-page {
   display: grid;
@@ -557,6 +522,7 @@ table {
   border-collapse: collapse;
   margin-top: 30px;
   margin: auto;
+  
 }
 th, td {
   border: 1px solid black;
@@ -575,12 +541,12 @@ th {
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
-  padding: 180px;
+  padding: 187px;
   margin: auto;
   width: 69%;
   position: relative;
 }
-.contact-div p{
+.contact-div h1{
   position: absolute;
   color: white;
   font-size: 50px;
@@ -592,8 +558,7 @@ th {
   background-color: gray;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 800px;
+  max-width: 1170px;
   margin: 30px auto; 
 }
 
