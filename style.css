@@ -6,7 +6,7 @@ body {
   max-width:375px;
   padding:10px;
   }
-  h1,h2{
+  h1,h2,h3{
     font-family: 'Roboto', sans-serif;
   }
   
@@ -112,8 +112,8 @@ video{
   margin: 20px 0; 
   text-align: center;
 }
-.our-team h2{
-  font-size: 24px;
+.our-team h3{
+  font-size: 20px;
 }
 .our-team img{
   max-width: 100%;
@@ -396,8 +396,9 @@ margin: auto;
   align-content: center;
   margin-top: 30px;
 }
-.our-team h2{
-  font-size: 34px;
+.our-team h3{
+  font-size: 26px;
+  font-weight: bold;
 }
 .our-team img{
   width:100%;
@@ -486,7 +487,7 @@ margin-top: 30px;
   margin-top: 30px;
 }
 .services-page h2{
-  font-size: 34px;
+  font-size: 27px;
 }
 .flex-services-page {
   display: grid;
