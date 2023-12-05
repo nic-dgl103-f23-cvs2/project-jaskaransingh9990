@@ -9,11 +9,6 @@ body {
   h1,h2{
     font-family: 'Roboto', sans-serif;
   }
-  .warpper-width
-  {
-    width: 1170px;
-    margin:auto;
-  }
   
   header {
     border: 1px solid rgba(255, 255, 255, 0.8);
@@ -75,7 +70,7 @@ video{
 }
 .services-page h2{
   margin: auto;
-  font-size: 30px;
+  font-size:30px;
 }
 .flex-services-page {
   display: grid;
@@ -159,6 +154,9 @@ footer img{
 width:100%;
 margin: auto;
 }
+.logo{
+margin-top: 30px;
+}
 
 
 /*contact-us page*/
@@ -167,9 +165,9 @@ margin: auto;
   background-size: cover; /* Adjust as needed */
   background-position: center; /* Adjust as needed */
   background-repeat: no-repeat; /* Adjust as needed */
-  padding: 56px;
+  padding: 40px;
   margin: auto;
-  width: 69%;
+  width: 72%;
 }
 /* services page */
 .overlay-text2 {
@@ -246,6 +244,9 @@ th {
   max-width:100%;
   position: relative;
 }
+.wrraper-width{
+  width: 100%;
+}
 .contact-div h1{
   position: absolute;
   color: white;
@@ -299,17 +300,19 @@ input[type="submit"] {
 }
 
 @media only screen and (min-width: 768px) {
-
   body {
     background:lightgray;
     color: black;
-    font-family: 'Open Sans', sans-serif;
     margin: auto;
     max-width:100%;
   }
   
- h1,h2{
+ h1,h2.h3{
   font-family: 'Roboto', sans-serif;
+  text-align: center;
+ }
+ p{
+  font-family: 'Open Sans', sans-serif;
  }
   header {
     align-items: center;
@@ -359,17 +362,14 @@ video{
   margin:auto;
   display:initial;
 }
-h2{
-    text-align: center;
-}
-h1{
-  text-align: center;
-}
 .about-us
 {
   margin: auto;
   width: 1170px;
   margin-top: 30px;
+}
+.about-us h2{
+  font-size: 34px;
 }
 .about-us p{
   font-size: 24px;
@@ -378,6 +378,9 @@ h1{
 .services-page {
 max-width: 1170px;
 margin: auto;
+}
+.services-page h2{
+   font-size: 34px;
 }
 .flex-services{
   display: flex;
@@ -405,6 +408,9 @@ margin: auto;
   align-content: center;
   margin-top: 30px;
 }
+.our-team h2{
+  font-size: 34px;
+}
 .our-team img{
   width:100%;
   margin: auto;
@@ -420,7 +426,7 @@ margin: auto;
     background-repeat: no-repeat; /* Adjust as needed */
     position:relative;
     padding: 300px;
-    margin: 40px 0; 
+    margin: 30px 0; 
 }
 .book a{
   position: absolute;
@@ -442,6 +448,7 @@ margin: auto;
 footer{
     margin: auto;
    width:1170px;
+   margin-top: 30px;
 }
 .contact-us{
   text-align: center;
@@ -460,6 +467,7 @@ iframe{
 footer .logo
 {
 text-align: center;
+margin-top: 30px;
 }
 
 
@@ -539,7 +547,6 @@ th {
 .contact-div{
   background-image: url('images/book.jpg');
   background-size: cover; 
-  background-position: center; 
   background-repeat: no-repeat; 
   padding: 187px;
   margin: auto;
@@ -558,23 +565,19 @@ th {
   background-color: gray;
   padding: 20px;
   border-radius: 8px;
-  max-width: 1170px;
+  max-width: 500px;
   margin: 30px auto; 
-}
-
-h1 {
   text-align: center;
-  color: #333;
 }
-
 form {
   display: flex;
   flex-direction: column;
 }
 
 label {
-  font-size: 1.2rem;
+  font-size: 20px;
   margin-bottom: 8px;
+  text-align: left;
 }
 
 input[type="text"],
@@ -586,34 +589,30 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 input[type="submit"] {
+  width: 100px;
   background-color: #4CAF50;
   color: white;
   padding: 12px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 1.2rem;
-  transition: background-color 0.3s ease;
+  font-size: 20px;
+  margin:auto;
 }
 
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
 
-input[type="submit"]:focus {
-  outline: none;
-}
+
 /*  our team page */
 .card {
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 1fr));
   gap: 20px;
-  padding: 20px;
-  text-align: center;
+  padding: 10px;
+  text-align: justify;
   margin-top: 80px;
   max-width: 1170px;
   margin: auto;
@@ -623,7 +622,7 @@ input[type="submit"]:focus {
 
 .card-wrapper {
   border: 2px solid black;
-  padding: 20px;
+  padding: 10px;
   border-radius: 70px;
   background-color: lightgray;
   color: black;
@@ -634,20 +633,19 @@ input[type="submit"]:focus {
 }
 
 .card-wrapper h2 {
-  font-size: 4rem;
+  font-size:30px;
   color: black;
 }
 
 .card-wrapper p {
-  font-size: 1.5rem;
+  font-size: 24px;
   width: 95%;
   margin-top: 20px;
-  text-align: justify;
+  text-align: center;
 }
 
 .card-wrapper:hover {
-  background-color: silver;
-  color: red;
+  background-color: white;
   opacity: 70%;
 }
 }
