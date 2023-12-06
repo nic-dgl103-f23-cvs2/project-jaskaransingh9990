@@ -1,0 +1,640 @@
+body {
+  background:lightgray;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  margin: auto;
+  max-width:375px;
+  padding:10px;
+  }
+  h1,h2,h3{
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  header {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    margin-bottom: 0px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    background-color: darkgray;
+    max-width: 100%;
+    padding: 10px;
+  }
+  nav {
+    padding-top: 30px;
+    text-align: right;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+  
+  nav ul li {
+    padding: 8px 0;
+  }
+  
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .show-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  img{
+    max-width: 100%;
+  }
+  .hero{
+    position: relative;
+}
+video{
+  display: none;
+}
+
+/* Style to overlay content on top of the video */
+
+.about-us h1{
+    margin: auto;
+    text-align: center;
+    font-size: 34px;
+}
+.services-page {
+    max-width: 375px;
+    margin-top: 20px;
+    text-align: center;
+}
+.services-page h2{
+  margin: auto;
+  font-size:27px;
+}
+.flex-services-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.grid-item {
+  position: relative;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay-text1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+.clickable-box {
+    display: inline-block;
+    padding: 10px;
+    background-color: black; /* Box background color */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline for the link */
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    text-align: center;
+    margin-top: 30px;
+}
+.our-team{
+  margin: 20px 0; 
+  text-align: center;
+}
+.our-team h3{
+  font-size: 20px;
+}
+.our-team img{
+  max-width: 100%;
+  margin:auto;
+  text-align: center;   
+}
+
+.book{
+    background-image: url('images/1.jpg'); /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    background-repeat: no-repeat; /* Adjust as needed */
+    padding: 100px;
+    margin: 20px 0; 
+}
+.book a{
+  position: absolute;
+  padding: 10px 20px;
+  border: 1px solid #45a049;
+  background-color: #45a049;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  left: 28%;
+}
+footer{
+  margin-top: 20px;
+  text-align: center;
+}
+footer h2{
+  font-size: 24px;
+}
+.our-approach{
+    display: none;
+}
+
+footer img{
+width:100%;
+margin: auto;
+}
+.logo{
+margin-top: 30px;
+}
+
+
+/*contact-us page*/
+.contact-div{
+  background-image: url('images/book.jpg');
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat; /* Adjust as needed */
+  padding: 40px;
+  margin: auto;
+  width: 72%;
+}
+/* services page */
+.overlay-text2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: brown;
+  font-size:30px;
+  font-weight: bold;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.table h2{
+  text-align: center;
+}
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: gray;
+}
+/*  our team */
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 80px;
+  max-width: 100%;
+  margin: auto;
+
+
+}
+
+.card-wrapper {
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 70px;
+  background-color: lightgray;
+  color: black;
+  text-align: center;
+  transition: background-color 2s ease;
+}
+
+.card-wrapper img {
+  width: 100%;
+}
+
+.card-wrapper h2 {
+  font-size: 24px;
+
+}
+
+.card-wrapper p {
+  font-size: 16px;
+  width: 95%;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.card-wrapper:hover {
+  background-color: silver;
+  opacity: 50%;
+}
+/* contact-us*/
+.contact-div{
+  max-width:100%;
+  position: relative;
+}
+.wrraper-width{
+  width: 100%;
+}
+.contact-div h1{
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  top:25%;
+  left:35%;
+}
+
+.form-container {
+  background-color: gray;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 30px auto; 
+}
+
+.contact-div h2 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background:lightgray;
+    color: black;
+    margin: auto;
+    max-width:100%;
+  }
+  
+ h1,h2.h3{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+ }
+ p{
+  font-family: 'Open Sans', sans-serif;
+ }
+  header {
+    align-items: center;
+    width: 1170px;
+    margin: auto;
+    padding: 10px;
+  }
+
+  nav .toggle {
+    display: none;
+  }
+
+  #nav-items {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  img{
+    max-width: 100%;
+  }
+  .wrraper-width{
+    width:1170px;
+    margin: auto;
+  }
+  .hero{
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    width: 1170px;
+    display:inline-block;
+}
+video{
+  max-width:1170px;
+  height: 10%;
+  display: inline-block;
+}
+.about-us
+{
+  margin: auto;
+  width: 1170px;
+  margin-top: 30px;
+}
+.about-us h1{
+  font-size: 34px;
+}
+.about-us p{
+  font-size: 24px;
+
+}
+.services-page {
+max-width: 1170px;
+margin: auto;
+}
+.services-page h2{
+   font-size: 34px;
+}
+.flex-services{
+  display: flex;
+  margin: auto;
+}
+.overlay-text1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 29px;
+  font-weight: bold;
+}
+.clickable-box {
+   padding: 10px;
+    background-color: green; 
+    color: #fff;
+    text-decoration: none; 
+    border-radius: 10px; 
+}
+.our-team {
+  width: 1170px;
+  margin: auto;
+  align-content: center;
+  margin-top: 30px;
+}
+.our-team h3{
+  font-size: 26px;
+  font-weight: bold;
+}
+.our-team img{
+  width:100%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.book-now{
+  width:100%;
+}
+.book{
+    background-image: url('images/1.jpg'); /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    background-repeat: no-repeat; /* Adjust as needed */
+    position:relative;
+    padding: 300px;
+    margin: 30px 0; 
+}
+.book a{
+  position: absolute;
+  padding: 10px 20px;
+  border: 1px solid #45a049;
+  background-color: #45a049;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  left: 41%;
+}
+.book a:hover
+{
+  background-color: red;
+}
+
+
+footer{
+    margin: auto;
+   width:1170px;
+   margin-top: 30px;
+}
+.contact-us{
+  text-align: center;
+  margin: 30px;
+}
+footer img{
+  width: 50%;
+  margin:  auto;
+}
+iframe{
+  width:70% ;
+}
+.footer-flex{
+  display:flex;
+}
+footer .logo
+{
+text-align: center;
+margin-top: 30px;
+}
+
+
+
+
+/*  services page*/
+
+.our-approach{
+  margin: auto;
+  align-items: center;
+  width: 1170px;
+  font-size: 24px;
+  display: block;
+}
+.our-approach h1{
+  font-size: 34px;
+}
+.para-hide{
+  display:initial;
+  color: black;
+  width:50%;
+}
+
+
+.services-page{
+  width:1170px;
+  margin: auto;
+  margin-top: 30px;
+}
+.services-page h2{
+  font-size: 27px;
+}
+.flex-services-page {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.grid-item {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  gap: 10px;
+}
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.overlay-text2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+table {
+  width: 1170px;
+  border-collapse: collapse;
+  margin-top: 30px;
+  margin: auto;
+  
+}
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: gray;
+}
+
+
+
+/*contact-us page*/
+.contact-div{
+  background-image: url('images/book.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  padding: 187px;
+  margin: auto;
+  width: 69%;
+  position: relative;
+}
+.contact-div h1{
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  top:25%;
+  left:40%;
+}
+
+.form-container {
+  background-color: gray;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 30px auto; 
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 20px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  width: 100px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  margin:auto;
+}
+
+
+
+/*  our team page */
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 10px;
+  text-align: justify;
+  margin-top: 80px;
+  max-width: 1170px;
+  margin: auto;
+
+
+}
+
+.card-wrapper {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 70px;
+  background-color: lightgray;
+  color: black;
+}
+
+.card-wrapper img {
+  width: 100%;
+}
+
+.card-wrapper h2 {
+  font-size:30px;
+  color: black;
+}
+
+.card-wrapper p {
+  font-size: 24px;
+  width: 95%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.card-wrapper:hover {
+  background-color: white;
+  opacity: 70%;
+}
+}
